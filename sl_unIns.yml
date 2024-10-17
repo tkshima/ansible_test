@@ -4,7 +4,7 @@
   gather_facts: no
 
   tasks:
-    - name: sl をインストールする
+    - name: sl をアンインストールする
       ansible.builtin.apt:
         name: sl
         state: absent

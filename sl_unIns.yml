@@ -1,0 +1,11 @@
+---
+- name: ansible.builtin.apt モジュールの使用例
+  hosts: all
+  gather_facts: no
+
+  tasks:
+    - name: sl をインストールする
+      ansible.builtin.apt:
+        name: sl
+        state: absent
+      become: yes

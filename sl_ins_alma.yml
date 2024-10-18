@@ -1,0 +1,11 @@
+---
+- name: ansible.builtin.dnf モジュールの使用例
+  hosts: all
+  gather_facts: no
+
+  tasks:
+    - name: sl をインストールする
+      ansible.builtin.dnf:
+        name: sl
+        state: present
+      become: yes
